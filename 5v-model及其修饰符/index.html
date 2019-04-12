@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model.lazy="name"><br/>
+        {{name}}<br/>
+        <input type="text" v-model="name"><br/>
+        <input type="text" v-model.number="price">
+        <!--  .trim 删除多余空格
+              .lazy 惰性更新
+              .number 转换为数值类型
+        -->
+        
+    </div>
+<script src="../lib/vue.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

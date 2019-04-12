@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div id="app">
+    <label>
+        男
+        <input  v-model="sex" value="male"type="radio">
+    </label>
+    <label>
+        女
+        <input  v-model="sex"value="female" type="radio">
+    </label><br/>
+    {{sex}}
+</div>
+<div id="bpp">
+    <label>
+        男
+        <input  v-model="sex" value="male" type="checkbox">
+    </label>
+    <label>
+        女
+        <input  v-model="sex"value="female" type="checkbox">
+    </label><br/>
+    {{sex}}
+</div>
+<div id="cpp">
+        你从哪里来?
+        <select v-modle="from" >
+            <option value="1">王家沟</option>
+            <option value="2">背背山</option>
+            <option value="3">王家沟</option>
+        </select>
+    <br/>
+    {{from}}
+</div>
+<div id="dpp">
+        <div>你要去哪里</div>
+        <select v-modle="des" multiple>
+            <option value="1">王家沟</option>
+            <option value="2">背背山</option>
+            <option value="4">li家沟</option>
+            <option value="5">王家沟</option>
+            <option value="6">王家沟</option>
+            <option value="7">王家沟</option>
+        </select><br/>
+    </label>
+    {{des}}
+</div>
+<script src="../lib/vue.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
