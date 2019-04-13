@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style type="text/css">
+     h1{
+     font-size:12px;
+     color:#930;
+     text-align:center;
+     }
+    </style>
+     </head>
+<body>
+    <h1>Hello World</h1>
+    <form>
+        用户名：<input type="text" value=""><br/>
+        密码：<input type="password" value="">
+    </form>
+    <div>
+    <textarea cols="50" rows="20">
+
+    </textarea>
+    <form><input type="submit" value="确定" name="submit"><input type="reset" value="重置" name="reset"></form>
+</div>
+  <form name="iform" method="POST" action="save.php">
+      你是否喜欢旅游<br/>
+    <input type="radio" value="喜欢" >喜欢
+    <input type="radio" value="不喜欢"> 不喜欢
+    <input type="radio" value="无所谓" >无所谓
+    你喜欢去哪些国家或地区<br/>
+    <input type="checkbox" value="中国" >中国
+    <input type="checkbox" value="日本" >日本
+    <input type="checkbox" value="美国" >美国
+  </form>
+  <form>
+      <label>爱好：</label>
+      <select>
+          <option value="读书">读书</option>
+          <option value="旅游">旅游</option>
+          <option value="音乐">音乐</option>
+          <option value="旅游">旅游</option>
+      </select>
+  </form>
+  <div>
+  <form action="save.php" method="POST">
+        <label>爱好：</label>
+        <select multiple="multiple">
+            <option value="读书">读书</option>
+            <option value="旅游">旅游</option>
+            <option value="音乐">音乐</option>
+            <option value="旅游">旅游</option>
+        </select>
+    </form>
+</div>
+<!-----块状元素、内联元素(又叫行内元素)和内联块状元素。
+
+常用的块状元素有：
+
+<div>、<p>、<h1>...<h6>、<ol>、<ul>、<dl>、<table>、<address>、<blockquote> 、<form>
+
+常用的内联元素有：
+
+<a>、<span>、<br>、<i>、<em>、<strong>、<label>、<q>、<var>、<cite>、<code>
+
+常用的内联块状元素有：
+
+<img>、<input>--->
+</body>
+</html>
