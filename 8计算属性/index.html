@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <table>
+            <thead>
+                <th>学科</th>
+                <th>分数</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>数学</td>
+                    <td><input type="text" v-model.number="math"></td>
+                </tr>
+                <tr>
+                    <td>数学</td>
+                    <td><input type="text" v-model="physics"></td>
+                </tr>
+                <tr>
+                    <td>数学</td>
+                    <td><input type="text" v-model="english"></td>
+                </tr>
+                <tr>
+                    <td>总分</td>
+                    <!--   <td>{{math+physics+english}}</td>    -->
+                    <td>{{sum}}</td>
+                 </tr>
+                 <tr>
+                    <td>平均分</td>
+                    <!--    <td>{{Math.round((math+physics+english)/3)}}</td>   -->
+                    <td>{{average}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<script src="../lib/vue.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
