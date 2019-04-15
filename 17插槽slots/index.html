@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .panel{
+        max-width: 300px;
+        border:  1px solid #999;
+        margin-bottom: 15px;
+    }
+    .panel *{
+        padding: 10px;
+    }
+    .panel .title{
+        border-bottom: 1px solid #999;
+    }
+    
+    .panel .footer{
+        border-bottom: 1px solid #999;
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="app">
+        <panel>
+            <div slot="title">yoo</div>
+            <div slot="content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Possimus maxime, repellat voluptas minima, a porro recusandae cumque 
+                 reprehenderit, perspiciatis dolore adipisci amet repellendus enim eveniet 
+                 aperiam unde dignissimos sed expedita.</div>
+            <div slot="footer"></div>
+        </panel>
+    </div>
+<template id="panel-tpl">
+        <div class="panel">
+            <div class="title">
+                <slot name="title"></slot> 
+            </div>
+            <content class="content">
+                <slot name="content"></slot>
+            </content>
+            <footer class="footer">
+                <solt name="footer">
+                    更多信息
+                </solt>
+            </footer>
+    </div>
+</template>
+<script src="../lib/vue.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
