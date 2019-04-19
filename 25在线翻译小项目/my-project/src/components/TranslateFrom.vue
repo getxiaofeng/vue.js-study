@@ -1,7 +1,7 @@
 <template>
-  <div  id="translateFrom">
-    <div >
-      <form id="transForm"  v-on:submit="formSubmit">
+  <div   id="translateFrom">
+    <center>
+      <form  id="transForm"  v-on:submit="formSubmit">
         <input class="form-control" type="text" v-model="textToTranslate"  placeholder="输入需要翻译的内容">
             <select class="form-control" v-model="language">
                 <option value="en">English</option>
@@ -9,9 +9,9 @@
                 <option value="ko">Korean</option>
                 <option value="ja">Janpenese</option>
             </select>
-        <input  type="submit" value="翻译">
+        <input class="btn btn-primary"  type="submit" value="翻译">
       </form>
-    </div>
+    </center>
   </div>
 </template>
 
@@ -39,10 +39,8 @@ export default {
   
 }
 </script>
-#transForm {
-    border:1px solid #ccc;
-    border-radius:10px;
-}
+
 <style>
+
 
 </style>
